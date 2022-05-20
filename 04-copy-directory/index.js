@@ -4,8 +4,6 @@ const path = require('path');
 const pathToSourceFolder = path.join(__dirname, 'files');
 const pathToDestFolder = path.join(__dirname, 'files-copy');
 
-
-
 const copyDir = async (pathToSourceFolder, pathToDestFolder) => {
 
   const createFolder = async (pathToDestFolder) => {
