@@ -17,7 +17,7 @@ const copyDir = async (pathToSourceFolder, pathToDestFolder) => {
 
   try {
     createFolder(pathToDestFolder);
-    const files = await fs.readdir(pathToSourceFolder, {withFileTypes: true},);
+    const files = await fs.readdir(pathToSourceFolder, {withFileTypes: true});
     for (const file of files) {
       const pathToSourceCurrentFile = path.join(pathToSourceFolder, file.name);
       const pathToDestCurrentFile = path.join(pathToDestFolder, file.name);
